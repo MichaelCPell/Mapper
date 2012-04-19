@@ -1,0 +1,50 @@
+<%= form_for(@coordinate) do |f| %>
+  <% if @coordinate.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@coordinate.errors.count, "error") %> prohibited this coordinate from being saved:</h2>
+
+      <ul>
+      <% @coordinate.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+    <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= f.label :latitude %><br />
+      <%= f.text_field :latitude %>
+    </div>
+
+    <div class="field">
+      <%= f.label :longitude %><br />
+      <%= f.text_field :longitude %>
+    </div>
+
+    <div class="field">
+      <%= f.label :square_footage %><br />
+      <%= f.text_field :sq_foot %>
+    </div>
+
+    <div class="field">
+      <!--Turn this into a select box-->
+      <%= f.label "Type of Real estate" %><br />
+      <%= f.select(:re_type, options_for_select([['Office',1],['Retail',2],['R&D',3],['Industrial',4]])) %>
+    </div>
+
+    <div class="field">
+      <!--Turn this into a select box-->
+      <%= f.label "Terms of busienss" %><br />
+      <%= f.select(:term, options_for_select([['Sale',1],['Lease',2]])) %>
+    </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

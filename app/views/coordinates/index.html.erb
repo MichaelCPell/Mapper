@@ -1,0 +1,60 @@
+<div id="contents">
+<h1>Mapper: Real Estate Example</h1>
+
+
+<%=  render :partial => "markMap", :formats => :js %>
+
+
+
+
+<h2>Available Properties</h2>
+<div id="properties_table">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Term</th>
+        <th>Square Footage</th>
+      </tr>
+
+    <% @coordinates.each do |coordinate| %>
+      <tr>
+        <td><%= coordinate.name %></td>
+        <td><%= coordinate.re_type %></td>
+        <td><%= coordinate.term %></td>
+        <td><%= coordinate.sq_foot %></td>
+      </tr>
+    <% end %>
+    </table>
+</div>
+    <h2>Filter These Properties</h2>
+    <table>
+      <%= form_tag url_for(:controller => :coordinates, :action => :index),  :method => :get do %>
+      <tr>
+        <td>Type of Property:</td>
+        <td><%= select_tag(:re_type, options_for_select([['All',0],['Office',1],['Retail',2],['R&D',3],['Industrial',4]],params[:re_type])) %></td>
+      </tr>
+
+      <tr>
+        <td>Terms of Sale:</td>
+        <td><%= select_tag(:term, options_for_select([['All',0],['Sale',1],['Lease',2]],params[:term])) %></td>
+      </tr>
+
+      <tr>
+        <td></td>
+        <td><%=  submit_tag "Click to Filter" %></td>
+      </tr>
+    </table>
+
+
+
+
+
+
+  <% end %>
+
+
+
+</div>
+
+<div id="map_canvas"></div>

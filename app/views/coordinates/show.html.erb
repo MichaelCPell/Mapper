@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+
+  <h1>The Map Markers Can Link to each property's details</h1>
+    <h2>Or anywhere that you want</h2>
+  <%= @coordinate.name %>
+
+
+
+<%= link_to 'Edit', edit_coordinate_path(@coordinate) %> |
+<%= link_to 'Back', coordinates_path %>
