@@ -7,13 +7,14 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: url('grad_bg.jpg') repeat no-repeat;
+  background-image: url('grad_bg.jpg');
+  background-repeat: repeat-x;
   background-color: #999999;
   color: #ee3a43;
   }
 
 #map_canvas {
-  height: 570px;
+  height: 580px;
   width: 500px;
   float: right;
   }
@@ -27,7 +28,7 @@ body {
 }
 
 #properties_table {
-  height: 250px;
+  height: 259px;
 }
 
 

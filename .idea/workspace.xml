@@ -52,7 +52,7 @@
       <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
+            <state line="17" column="16" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -61,7 +61,7 @@
       <file leaf-file-name="coordinates.css.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/coordinates.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="12" selection-start="384" selection-end="384" vertical-scroll-proportion="0.36824876">
+            <state line="10" column="29" selection-start="324" selection-end="324" vertical-scroll-proportion="0.17184943">
               <folding />
             </state>
           </provider>
@@ -757,14 +757,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="593" selection-end="593" vertical-scroll-proportion="0.0">
+        <state line="17" column="16" selection-start="595" selection-end="595" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/coordinates.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="12" selection-start="384" selection-end="384" vertical-scroll-proportion="0.36824876">
+        <state line="10" column="29" selection-start="324" selection-end="324" vertical-scroll-proportion="0.17184943">
           <folding />
         </state>
       </provider>
